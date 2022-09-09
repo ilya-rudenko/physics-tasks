@@ -1,0 +1,11 @@
+.main {
+    padding: 24px;
+    flex-grow: 1;
+    display: flex;
+}
+.App {
+    font-family: sans-serif;
+    height: 100%;
+    display: flex;
+    position: relative;
+}

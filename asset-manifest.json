@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/physics-tasks/static/css/main.4f99d451.css",
+    "main.js": "/physics-tasks/static/js/main.3f7f1dd4.js",
+    "index.html": "/physics-tasks/index.html",
+    "main.4f99d451.css.map": "/physics-tasks/static/css/main.4f99d451.css.map",
+    "main.3f7f1dd4.js.map": "/physics-tasks/static/js/main.3f7f1dd4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f99d451.css",
+    "static/js/main.3f7f1dd4.js"
+  ]
+}

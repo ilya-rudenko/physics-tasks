@@ -1,5 +1,4 @@
 import 'react-pro-sidebar/dist/css/styles.css';
-import Task from "./components/Task";
 import {
     BrowserRouter as Router,
     Routes ,

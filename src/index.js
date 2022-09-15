@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import {BrowserRouter, Route,Routes} from "react-router-dom";
-import Task from "./components/Task";
 import Task1_4 from "./components/tasks/Task1_4";
 import Task1_5 from "./components/tasks/Task1_5";
 

@@ -8,7 +8,7 @@ import {
     SidebarContent,
     SidebarFooter
 } from "react-pro-sidebar";
-import { FaGem, FaList, FaGithub, FaHome } from "react-icons/fa";
+import { FaGithub, FaHome } from "react-icons/fa";
 import "../App.css";
 import {Link} from "react-router-dom"
 

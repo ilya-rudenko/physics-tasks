@@ -1,7 +1,6 @@
 import React from 'react';
 import "./tasks/Task.css";
 import Navbar from "./Navbar";
-import logo512 from "../images/logo512.png";
 
 const Home = () => {
     return (

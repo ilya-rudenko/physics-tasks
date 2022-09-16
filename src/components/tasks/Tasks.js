@@ -1,4 +1,4 @@
-import {pi, round, sin, sqrt, tan} from "mathjs";
+import {pi, round, sqrt, tan} from "mathjs";
 import img1_4 from "../../images/1_4.svg"
 import img1_8 from "../../images/1_8.svg"
 import img2_1 from "../../images/2_1.svg"

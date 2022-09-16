@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
 import Navbar from "../Navbar";
 import "./Task.css";
-import logo512 from "../../images/logo512.png"
 import img from "../../images/1_4.svg";
 
-const TaskTemplate = ({id,condition,imagePath,numberOfVariables,variablesNames,answerUOM,answerVar,solve}) => {
+const TaskTemplate = ({condition,imagePath,numberOfVariables,variablesNames,answerUOM,answerVar,solve}) => {
 
     const [variables,setVariables]=useState({
         first:0,
@@ -40,7 +39,7 @@ const TaskTemplate = ({id,condition,imagePath,numberOfVariables,variablesNames,a
                 </div>
                 <div className='content-block'>
                     <div className='header'>Рисунок</div>
-                    <img src={imagePath}/>
+                    <img src={imagePath} alt='Рисунок к задаче'/>
                 </div>
                 <div className='content-block'>
                     <div className='variables'>

@@ -46,7 +46,7 @@ export default function Navbar() {
             <SidebarFooter style={{ textAlign: "center" }}>
                 <div className="sidebar-btn-wrapper">
                     <a
-                        href="https://www.github.com"
+                        href="https://github.com/ilya-rudenko/physics-tasks"
                         target="_blank"
                         className="sidebar-btn"
                         rel="noopener noreferrer"

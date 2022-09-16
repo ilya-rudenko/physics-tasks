@@ -8,13 +8,14 @@ import {
     useParams
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Home from "./components/tasks/Home";
 
 function App() {
 
     return (
         <div className="App">
             <Navbar />
-            <div>hellofsa</div>
+            <Home/>
         </div>
     );
 

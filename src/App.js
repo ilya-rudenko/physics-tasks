@@ -8,7 +8,7 @@ import {
     useParams
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./components/tasks/Home";
+import Home from "./components/Home";
 
 function App() {
 

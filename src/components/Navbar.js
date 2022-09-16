@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {
     ProSidebar,
     Menu,
@@ -23,6 +23,10 @@ export default function Navbar() {
         whiteSpace: "noWrap"
     };
 
+    useEffect(() => {
+        document.title = 'Физика';
+    });
+
     return (
         <ProSidebar>
             <SidebarHeader style={headerStyle}>Физика</SidebarHeader>
@@ -38,7 +42,17 @@ export default function Navbar() {
                             <Link to="/task1_4">Задание №4</Link>
                         </MenuItem>
                         <MenuItem>
-                            <Link to="/task1_5">Задание №5</Link>
+                            <Link to="/task1_8">Задание №8</Link>
+                        </MenuItem>
+                    </SubMenu>
+                    <SubMenu
+                        title="Расчет напряженности"
+                    >
+                        <MenuItem>
+                            <Link to="/task2_1">Задание №1</Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link to="/task2_4">Задание №4</Link>
                         </MenuItem>
                     </SubMenu>
                 </Menu>

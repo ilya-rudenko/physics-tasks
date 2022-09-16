@@ -2,14 +2,15 @@ import React, {useState} from 'react';
 import Navbar from "../Navbar";
 import "./Task.css";
 import logo512 from "../../images/logo512.png"
+import img from "../../images/1_4.svg";
 
-const TaskTemplate = () => {
+const TaskTemplate = ({id,condition,imagePath,numberOfVariables,variablesNames,answerUOM,answerVar,solve}) => {
 
     const [variables,setVariables]=useState({
         first:0,
-        "second":0,
-        "third":0,
-        "fourth":0
+        second:0,
+        third:0,
+        fourth:0
     });
 
     const[answer,setAnswer] = useState(0);
@@ -24,6 +25,8 @@ const TaskTemplate = () => {
     }
 
     const handleSolve =()=>{
+        console.log(solve);
+        console.log(img);
         setAnswer(solve(variables));
     }
 
@@ -32,62 +35,70 @@ const TaskTemplate = () => {
             <Navbar/>
             <div className="main-wrapper">
                 <div className="content-block">
-                    <div className='header'>Задача</div>
-                    <div>Но дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации глубокомысленных рассуждений. Но семантический разбор внешних противодействий предопределяет высокую востребованность существующих финансовых и административных условий. В целом, конечно, постоянный количественный рост и сфера нашей активности позволяет выполнить важные задания по разработке анализа существующих паттернов поведения.</div>
+                    <div className='header'>Условие</div>
+                    <div>{condition}</div>
                 </div>
                 <div className='content-block'>
                     <div className='header'>Рисунок</div>
-                    <img src={logo512}/>
+                    <img src={imagePath}/>
                 </div>
                 <div className='content-block'>
                     <div className='variables'>
-                        <div className="input-block">
-                            <span>Variable:</span>
-                            <input
+                        {numberOfVariables>0 && (
+                            <div className="input-block">
+                                <span>{variablesNames[0]}:</span>
+                                <input
                                 onChange={handleChange}
                                 className="input"
                                 type='number'
                                 name='first'
-                            />
-                        </div>
-                        <div className="input-block">
-                            <span>Variable:</span>
-                            <input
-                                onChange={handleChange}
-                                className="input"
-                                type='number'
-                                name='second'
-                            />
-                        </div>
-                        <div className="input-block">
-                            <span>Variable:</span>
-                            <input
-                                onChange={handleChange}
-                                className="input"
-                                type='number'
-                                name='third'
-                            />
-                        </div>
-                        <div className="input-block">
-                            <span>Variable:</span>
-                            <input
-                                onChange={handleChange}
-                                className="input"
-                                type='number'
-                                name='fourth'
-                            />
-                        </div>
+                                />
+                            </div>
+                        )}
+                        {numberOfVariables>1 && (
+                            <div className="input-block">
+                                <span>{variablesNames[1]}:</span>
+                                <input
+                                    onChange={handleChange}
+                                    className="input"
+                                    type='number'
+                                    name='second'
+                                />
+                            </div>
+                        )}
+                        {numberOfVariables>2 && (
+                            <div className="input-block">
+                                <span>{variablesNames[2]}:</span>
+                                <input
+                                    onChange={handleChange}
+                                    className="input"
+                                    type='number'
+                                    name='third'
+                                />
+                            </div>
+                        )}
+                        {numberOfVariables>3 && (
+                            <div className="input-block">
+                                <span>{variablesNames[3]}:</span>
+                                <input
+                                    onChange={handleChange}
+                                    className="input"
+                                    type='number'
+                                    name='fourth'
+                                />
+                            </div>
+                        )}
                     </div>
                     <div className='answer-block'>
                         <button className='btn-11' onClick={handleSolve}>
                             Вычислить
                         </button>
                         <div className='right'>
-                            <div className='answer'>Ответ:</div>
+                            <div className='answer'>{answerVar}:</div>
                             <input
                                 className="input"
                                 disabled
-                                value={answer + " см"}
+                                value={answer + " "+answerUOM}
                             />
                         </div>
                     </div>
@@ -98,11 +109,6 @@ const TaskTemplate = () => {
     );
 };
 
-const solve = (variables)=>{
-    const {first,second,third,fourth} = variables;
-
-    return first+second+third+fourth;
-}
 
 
 

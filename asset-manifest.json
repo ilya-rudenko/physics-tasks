@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/physics-tasks/static/css/main.bc894e9a.css",
-    "main.js": "/physics-tasks/static/js/main.647e17a1.js",
-    "static/media/1_4.svg": "/physics-tasks/static/media/1_4.ce4a3e07b290e43524d885e18578c7a4.svg",
-    "static/media/1_8.svg": "/physics-tasks/static/media/1_8.f5a1561ba2a8e7a3033797100a04a483.svg",
-    "static/media/2_1.svg": "/physics-tasks/static/media/2_1.2269f2dda8cb50f96b22caf5aa74c48d.svg",
-    "static/media/2_4.svg": "/physics-tasks/static/media/2_4.2377d9fe8c9dc7fe57917c3587ea4369.svg",
+    "main.js": "/physics-tasks/static/js/main.fc797fb9.js",
+    "static/media/1_8.svg": "/physics-tasks/static/media/1_8.9ebe9f20063a1fc0675f01e341d19d03.svg",
+    "static/media/1_4.svg": "/physics-tasks/static/media/1_4.2d232666cfe5c56be4d0bd0e2a81951e.svg",
+    "static/media/2_1.svg": "/physics-tasks/static/media/2_1.441b622786d0345456505099e7593d32.svg",
+    "static/media/2_4.svg": "/physics-tasks/static/media/2_4.a20b587c7ea05e8738442ad8aa503624.svg",
     "index.html": "/physics-tasks/index.html",
     "main.bc894e9a.css.map": "/physics-tasks/static/css/main.bc894e9a.css.map",
-    "main.647e17a1.js.map": "/physics-tasks/static/js/main.647e17a1.js.map"
+    "main.fc797fb9.js.map": "/physics-tasks/static/js/main.fc797fb9.js.map"
   },
   "entrypoints": [
     "static/css/main.bc894e9a.css",
-    "static/js/main.647e17a1.js"
+    "static/js/main.fc797fb9.js"
   ]
 }

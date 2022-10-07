@@ -55,6 +55,16 @@ export default function Navbar() {
                             <Link to="/task2_4">Задание №4</Link>
                         </MenuItem>
                     </SubMenu>
+                    <SubMenu
+                        title='Электростатика. Работа поля'
+                    >
+                        <MenuItem>
+                            <Link to="/task4_1">Задание №1</Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link to="/task4_8">Задание №8</Link>
+                        </MenuItem>
+                    </SubMenu>
                 </Menu>
             </SidebarContent>
             <SidebarFooter style={{ textAlign: "center" }}>

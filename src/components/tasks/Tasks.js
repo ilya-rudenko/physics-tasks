@@ -3,6 +3,8 @@ import img1_4 from "../../images/1_4.svg";
 import img1_8 from "../../images/1_8.svg";
 import img2_1 from "../../images/2_1.svg";
 import img2_4 from "../../images/2_4.svg";
+import img4_1 from '../../images/4_1.svg';
+import img4_8 from '../../images/4_8.svg';
 import placeholder from "../../images/placeholder.jpeg";
 
 export const task1_4 = {
@@ -55,5 +57,33 @@ export const task2_4 = {
     solve: (variables)=>{
         const {first,second} = variables;
         return round( (second*9000)/first ,4);
+    }
+}
+
+export const task4_1 = {
+    id:41,
+    condition: 'В точках A и В на расстоянии АВ=l  закреплены заряды +9q и -q. Вдоль прямой AB к ним движется частица массы m, имеющая заряд +q. Какую наименьшую скорость должна иметь эта частица на очень большом расстоянии, чтобы достичь точки В?',
+    imagePath: img4_1,
+    numberOfVariables:3,
+    variablesNames:['q','m','l'],
+    answerUOM: 'м/c',
+    answerVar: 'V',
+    solve: (variables) => {
+        const {first,second,third} = variables;
+        return round(sqrt((8*first*first*(9000000000))/(second*third)) ,4);
+    }
+}
+
+export const task4_8 = {
+    id:48,
+    condition: 'Точечный заряд q находится на расстоянии l от безграничной проводящей плоскости. Какую работу необходимо совершить, чтобы медленно удалить этот заряд на очень большое расстояние от плоскости?',
+    imagePath: img4_8,
+    numberOfVariables:2,
+    variablesNames:['q','l'],
+    answerUOM: 'Дж',
+    answerVar: 'A',
+    solve: (variables) => {
+        const {first,second} = variables;
+        return round(((-9000000000*first*first)/second) ,4);
     }
 }

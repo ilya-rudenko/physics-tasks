@@ -56,13 +56,23 @@ export default function Navbar() {
                         </MenuItem>
                     </SubMenu>
                     <SubMenu
-                        title='Электростатика. Работа поля'
+                        title='Работа поля'
                     >
                         <MenuItem>
                             <Link to="/task4_1">Задание №1</Link>
                         </MenuItem>
                         <MenuItem>
                             <Link to="/task4_8">Задание №8</Link>
+                        </MenuItem>
+                    </SubMenu>
+                    <SubMenu
+                        title='Проводники и диэлектрики в эл. поле'
+                    >
+                        <MenuItem>
+                            <Link to='/task5_5'>Задание №5</Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link to='/task5_8'>Задание №8</Link>
                         </MenuItem>
                     </SubMenu>
                 </Menu>

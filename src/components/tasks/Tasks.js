@@ -1,10 +1,12 @@
-import {pi, round, sqrt, tan} from "mathjs";
+import {pi, round, sqrt, tan, log} from "mathjs";
 import img1_4 from "../../images/1_4.svg";
 import img1_8 from "../../images/1_8.svg";
 import img2_1 from "../../images/2_1.svg";
 import img2_4 from "../../images/2_4.svg";
 import img4_1 from '../../images/4_1.svg';
 import img4_8 from '../../images/4_8.svg';
+import img5_8 from '../../images/5_8.png';
+import img5_5 from '../../images/5_5.svg';
 import placeholder from "../../images/placeholder.jpeg";
 
 export const task1_4 = {
@@ -85,5 +87,35 @@ export const task4_8 = {
     solve: (variables) => {
         const {first,second} = variables;
         return round(((-9000000000*first*first)/second) ,4);
+    }
+}
+
+export const task5_8 = {
+    id: 58,
+    condition: 'Найти емкость бесконечной цепи, которая образована повторением одного и того же звена, состоящего из двух одинаковых конденсаторов, каждый емкости C',
+    imagePath: img5_8,
+    numberOfVariables: 1,
+    variablesNames: ['C'],
+    answerUOM: 'Ф',
+    answerVar: 'C',
+    solve: (variables) => {
+        const {first} = variables;
+        return round(first* (sqrt(5)-1)/2,4)
+    }
+}
+
+export const task5_5 = {
+    id: 55,
+    condition: 'Газоразрядный счетчик элементарных частиц состоит из трубки радиуса r2=10 мм и натянутой по оси трубки нити радиуса r1=50 мкм. Длина счетчика l=150 мм. Положив ε=1, оценить межэлектродную емкость C.',
+    imagePath: img5_5,
+    numberOfVariables: 3,
+    variablesNames: ['r1','r2','l'],
+    answerUOM: 'пФ/м',
+    answerVar: 'C',
+    solve: (variables) => {
+        const {first,second,third} = variables;
+        return round(
+            (2 * pi * (third/10**3) * 8.85 * 10**(-12)) / log((second)/(first/10**3)) * 10**12
+            ,4);
     }
 }

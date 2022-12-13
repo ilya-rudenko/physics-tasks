@@ -36,7 +36,7 @@ export default function Navbar() {
                 </Menu>
                 <Menu iconShape="circle">
                     <SubMenu
-                        title="Электростатика"
+                        title="1. Электростатика"
                     >
                         <MenuItem>
                             <Link to="/task1_4">Задание №4</Link>
@@ -45,8 +45,9 @@ export default function Navbar() {
                             <Link to="/task1_8">Задание №8</Link>
                         </MenuItem>
                     </SubMenu>
+
                     <SubMenu
-                        title="Расчет напряженности"
+                        title="2. Расчет напряженности"
                     >
                         <MenuItem>
                             <Link to="/task2_1">Задание №1</Link>
@@ -55,8 +56,20 @@ export default function Navbar() {
                             <Link to="/task2_4">Задание №4</Link>
                         </MenuItem>
                     </SubMenu>
+
                     <SubMenu
-                        title='Работа поля'
+                        title="3. Потенциал"
+                    >
+                        <MenuItem>
+                            <Link to="/task3_3">Задание №3</Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link to="/task3_5">Задание №5</Link>
+                        </MenuItem>
+                    </SubMenu>
+
+                    <SubMenu
+                        title='4. Работа поля'
                     >
                         <MenuItem>
                             <Link to="/task4_1">Задание №1</Link>
@@ -65,14 +78,69 @@ export default function Navbar() {
                             <Link to="/task4_8">Задание №8</Link>
                         </MenuItem>
                     </SubMenu>
+
                     <SubMenu
-                        title='Проводники и диэлектрики в эл. поле'
+                        title='5. Проводники'
                     >
                         <MenuItem>
                             <Link to='/task5_5'>Задание №5</Link>
                         </MenuItem>
                         <MenuItem>
                             <Link to='/task5_8'>Задание №8</Link>
+                        </MenuItem>
+                    </SubMenu>
+
+                    <SubMenu
+                        title='6. Диэлектрики'
+                    >
+                        <MenuItem>
+                            <Link to='/task6_3'>Задание №3</Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link to='/task6_7'>Задание №7</Link>
+                        </MenuItem>
+                    </SubMenu>
+
+                    <SubMenu
+                        title='7. Постоянный ток'
+                    >
+                        <MenuItem>
+                            <Link to='/task7_2'>Задание №2</Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link to='/task7_3'>Задание №3</Link>
+                        </MenuItem>
+                    </SubMenu>
+
+                    <SubMenu
+                        title='8. Магнитное поле'
+                    >
+                        <MenuItem>
+                            <Link to='/task8_3'>Задание №3</Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link to='/task8_5'>Задание №5</Link>
+                        </MenuItem>
+                    </SubMenu>
+                    <SubMenu
+                        title='9. Сила Ампера'
+                    >
+                        <MenuItem>
+                            <Link to='/task9_4'>Задание №4</Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link to='/task9_5'>Задание №5</Link>
+                        </MenuItem>
+                    </SubMenu>
+
+                    <SubMenu
+                        title='10. Электромагнетическая индукция'
+                    >
+                        <MenuItem>
+                            <Link to='/task10_2'>Задание №2</Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link to='/task10_3'>Задание №3</Link>
                         </MenuItem>
                     </SubMenu>
                 </Menu>

@@ -1,21 +1,24 @@
 {
   "files": {
     "main.css": "/physics-tasks/static/css/main.bc894e9a.css",
-    "main.js": "/physics-tasks/static/js/main.c828a258.js",
+    "main.js": "/physics-tasks/static/js/main.8354397e.js",
+    "static/media/10_3.png": "/physics-tasks/static/media/10_3.c92b736c5b6d477936ee.png",
+    "static/media/7_3.png": "/physics-tasks/static/media/7_3.73143ad9cc5a18234a88.png",
     "static/media/5_8.png": "/physics-tasks/static/media/5_8.83659078cabbaf5888fc.png",
-    "static/media/4_1.svg": "/physics-tasks/static/media/4_1.d10581631bd8709eef4c73c915d7af28.svg",
+    "static/media/4_1.svg": "/physics-tasks/static/media/4_1.a783bb44bc0e72c29a08fe5d48cf7c9d.svg",
     "static/media/1_8.svg": "/physics-tasks/static/media/1_8.9ebe9f20063a1fc0675f01e341d19d03.svg",
-    "static/media/5_5.svg": "/physics-tasks/static/media/5_5.a3048f6eb47160ea881467985b93038f.svg",
+    "static/media/5_5.svg": "/physics-tasks/static/media/5_5.72f9a5ae5c2468a189dd30ab54b31389.svg",
     "static/media/1_4.svg": "/physics-tasks/static/media/1_4.2d232666cfe5c56be4d0bd0e2a81951e.svg",
     "static/media/2_1.svg": "/physics-tasks/static/media/2_1.441b622786d0345456505099e7593d32.svg",
-    "static/media/4_8.svg": "/physics-tasks/static/media/4_8.5a244bd10ffd002ea5bb0ba1f963198e.svg",
+    "static/media/4_8.svg": "/physics-tasks/static/media/4_8.18ad0500a92ef5493fc348cbeb871550.svg",
+    "static/media/7_2.svg": "/physics-tasks/static/media/7_2.8501ac8942dc0f9760e4e1d6835d7809.svg",
     "static/media/2_4.svg": "/physics-tasks/static/media/2_4.a20b587c7ea05e8738442ad8aa503624.svg",
     "index.html": "/physics-tasks/index.html",
     "main.bc894e9a.css.map": "/physics-tasks/static/css/main.bc894e9a.css.map",
-    "main.c828a258.js.map": "/physics-tasks/static/js/main.c828a258.js.map"
+    "main.8354397e.js.map": "/physics-tasks/static/js/main.8354397e.js.map"
   },
   "entrypoints": [
     "static/css/main.bc894e9a.css",
-    "static/js/main.c828a258.js"
+    "static/js/main.8354397e.js"
   ]
 }
